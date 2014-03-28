@@ -1,4 +1,13 @@
-<!doctype html> <html> <head> <title>irhh.de</title> <meta name="viewport" content="width=device-width"> <link rel="stylesheet" href="static/css/bootstrap.min.gz.css"> <link rel="stylesheet" href="static/css/irhh.min.gz.css"> <script type="text/javascript" src="//use.typekit.net/heh2aao.js"></script> <script type="text/javascript">try{Typekit.load();}catch(e){}</script> <script type="text/javascript">
+<!doctype html>
+<html>
+<head>
+<title>irhh.de</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/irhh.css">
+<script type="text/javascript" src="//use.typekit.net/heh2aao.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
   function rand (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -9,12 +18,15 @@
     e.href = farbe;
     document.getElementsByTagName("head")[0].appendChild(e);
   }
-  window.onload = cssNachladen("static/css/color/" + rand(1,10) + ".gz.css");
-</script> <style>
+  window.onload = cssNachladen("static/css/color/" + rand(1,10) + ".css");
+</script>
+
+<style>
   body {
     padding-bottom: 60px;
   }
-</style> <script>
+</style>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -22,7 +34,266 @@
   ga('create', 'UA-40248956-3', 'irhh.de');
   ga('send', 'pageview');
   ga('set', 'anonymizeIp', true);
-</script> </head> <body data-spy="scroll" data-target=".navbar"> <div id="wrap"> <div class="navbar navbar-fixed-top"> <div class="container"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="http://irhh.de" class="navbar-brand" onClick="ga('send', 'event', 'Nav', 'klick', 'brand');">irhh.de</a> <div class="navbar-collapse collapse"> <ul class="nav navbar-nav"> <li class="active"><a href="#home" onClick="ga('send', 'event', 'Nav', 'klick', 'home');"><span class="glyphicon glyphicon-home"></span></a></li> <li><a href="#leistungen" onClick="ga('send', 'event', 'Nav', 'klick', 'leistungen');">Leistungen</a></li> <li><a href="#projekte" onClick="ga('send', 'event', 'Nav', 'klick', 'projekte');">Projekte</a></li> <li><a href="#qualifikation" onClick="ga('send', 'event', 'Nav', 'klick', 'qualifikation');">Qualifikation</a></li> </ul> <ul class="nav navbar-nav navbar-right"> <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tint"></span> <b class="caret"></b></a> <ul class="dropdown-menu"> <li class="text-muted" align="center"><h4>Farbwechsler</h4></li> <li class="grey"><a href="javascript:cssNachladen('static/css/color/1.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'grey');"><span class="glyphicon glyphicon-stop"></span> grey</a></li> <li class="mocha"><a href="javascript:cssNachladen('static/css/color/2.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'mocha');"><span class="glyphicon glyphicon-stop"></span> mocha</a></li> <li class="orange"><a href="javascript:cssNachladen('static/css/color/3.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'orange');"><span class="glyphicon glyphicon-stop"></span> orange</a></li> <li class="pink"><a href="javascript:cssNachladen('static/css/color/4.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pink');"><span class="glyphicon glyphicon-stop"></span> pink</a></li> <li class="melon"><a href="javascript:cssNachladen('static/css/color/5.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'melon');"><span class="glyphicon glyphicon-stop"></span> melon</a></li> <li class="purple"><a href="javascript:cssNachladen('static/css/color/6.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'purple');"><span class="glyphicon glyphicon-stop"></span> purple</a></li> <li class="blue"><a href="javascript:cssNachladen('static/css/color/7.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'blue');"><span class="glyphicon glyphicon-stop"></span> blue</a></li> <li class="pool"><a href="javascript:cssNachladen('static/css/color/8.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pool');"><span class="glyphicon glyphicon-stop"></span> pool</a></li> <li class="green"><a href="javascript:cssNachladen('static/css/color/9.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'green');"><span class="glyphicon glyphicon-stop"></span> green</a></li> <li class="olive"><a href="javascript:cssNachladen('static/css/color/10.gz.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'olive');"><span class="glyphicon glyphicon-stop"></span> olive</a></li> </ul> </li> <p class="navbar-text" vertical-align="middle"> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://irhh.de" data-lang="en" data-count="none">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> </p> <a data-toggle="modal" href="imprint.html" data-target="#myModal" class="navbar-text" onClick="ga('send', 'pageview', 'imprint.html');">Impressum</a> </ul> </div> </div> </div> <div class="container"> <div class="row" id="home"> <div class="jumbotron"> <h1>irhh.de <small>irRational hamburg</small></h1> <p> Willkommen bei irhh.de, Ihrem IT-Dienstleister aus Hamburg! Als IT-Profi mit langj&auml;hriger Erfahrung biete ich Ihnen Unterst&uuml;tzung bei allen Fragen und Problemen rund um die IT. Mein Fokus liegt dabei auf Windows-Server-Infrastruktur, Virtualisierung und Cloud-L&ouml;sungen. Als kreativen Ausgleich dazu entwickle und designe ich Webseiten und optimiere diese f&uuml;r Performance. </p> </div> </div> <div class="row" id="leistungen"> <div class="col-lg-12"> <div class="panel panel-default"> <div class="panel-heading2"> <h2>Leistungen</h2> </div> <div class="row"> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/tools-11-icon.png" alt="systemadministration" class="icon"/> <h3>Systemadministration</h3> <p> Ob es um einen neuen Benutzeraccount, einen <abbr title="Virtual Private Network">VPN</abbr>-Zugang oder die Servermigration geht: Bei der Systemadministration sollte man wissen, was man tut. Nicht nur, da bei vielen Eingriffen ins System das Risiko besteht, Sicherheitsl&uuml;cken zu verursachen. H&auml;ufig enden Versuche, selbst Hand anzulegen, in instabilen Bastell&ouml;sungen, die viel mehr Zeit gekostet haben, als urspr&uuml;nglich geplant. Daher ist es meistens sinnvoller, administrative Aufgaben an einen externen Dienstleister abzugeben, denn dass schont nicht nur die Nerven, sondern auch den Geldbeutel. Als erfahrener Systemadministrator im Windows-Umfeld unterst&uuml;tze ich Sie bei allen Aufgaben der IT, professionell, zuverl&auml;ssig und umkompliziert! </p> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/monitoring-5-icon.png" alt="serverwartung" class="icon"/> <h3>Serverwartung</h3> <p> Gerade kleine und mittlere Unternehmen haben h&auml;ufig nicht die finanziellen Mittel festangestellte Systemadministratoren zu besch&auml;ftigen. Dennoch ist es wichtig, die IT-Infrastruktur nicht sich selbst zu &uuml;berlassen. Regelm&auml;&szlig;iges Monitoring und Warten von Servern kann viele Probleme bereits fr&uuml;hzeitig aufdecken. So k&ouml;nnen rechtzeitig Gegenma&szlig;nahmen getroffen und Probleme gel&ouml;st werden, bevor sie sp&uuml;rbare Auswirkungen auf den Gesch&auml;ftsbetrieb haben. Ich biete Ihnen regelm&auml;&szlig;ige und fachm&auml;nnische Serverwartung zu fairen Preisen, ganz nach Ihrem Bedarf. </p> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/server-6-icon.png" alt="infrastrukturplanung" class="icon"/> <h3>Infrastrukturplanung</h3> <p> Die IT-Infrastruktur ist heute erfolgskritischer Bestandteil jedes Gesch&auml;ftsprozesses. Daher bedarf es sorgf&auml;ltiger Planung und Entwicklung der Infrastruktur. So bieten z.B. Virtualisierung und Cloud-Dienste vielf&auml;ltige M&ouml;glichkeiten, die allerdings nicht f&uuml;r jedes Unternehmen nur von Vorteil sein m&uuml;ssen. Ich biete Ihnen von der einfachen Beratung bis zur umfangreichen Planung und Implementierung, Unterst&uuml;tzung bei allen Fragen rund um Ihre IT-Infrastruktur. Virtualisierung, Management und (Private-)Cloud L&ouml;sungen basierend auf Windows-Server-Produkten sind dabei meine Kernkompetenz. </p> </div> </div> <div class="row"> &nbsp; </div> <div class="row"> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/user-8-icon.png" alt="beratung" class="icon"/> <h3>Beratung</h3> <p> Ganz egal, ob es um den Einkauf neuer Hardware geht oder um die Einf&uuml;hrung von neuer Software; die zentralen Fragen lauten meist: <i>Was ist das richtige f&uuml;r unser Unternehmen? Was erf&uuml;llt unsere Anforderungen, bietet aber ein gutes Preis-Leistungs-Verh&auml;ltnis?</i> So einfach die Fragen sind, so schwer sind die Antworten. Der Markt bietet vielf&auml;ltige L&ouml;sungen, das Problem ist es, die richtigen auszuw&auml;hlen. Hier hilft dann auch kein Google weiter, ohne die richtige Erfahrung, ist es schwierig die richtigen Entscheidungen in einem komplexen Umfeld zu treffen. Ich unterst&uuml;tze Sie bei der Entscheidungsfindung und berate Sie kompetent zu Hard- und Softwarefragen. </p> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/globe-4-icon.png" alt="webdesign" class="icon"/> <h3>Webdesign</h3> <p> Die richtige Webseite richtet sich nach dem Bedarf. Die Entwicklung einer kleinen, statischen Portfolio-Seite ben&ouml;tigt eine andere Herangehensweise als eine umfangreiche, dynamische Unternehmens-Seite. Ich entwickle Ihre Seite bedarfsgerecht, mit zeitgem&auml;&szlig;en Werkzeugen, basierend z.B. auf Bootstrap oder Wordpress. Selbstverst&auml;ndlich sind auch Performance- und Suchmaschinenoptimierung Teil des Entwicklungsprozesses. </p> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/time-9-icon.png" alt="performance optimierung" class="icon"/> <h3>Performance Optimierung</h3> <p> Auch in Zeiten schneller Internetanschl&uuml;sse spielt die Performance von Webseiten eine wichtige Rolle. Neben der Usererfahrung beeinflusst die Performance auch das Google-Ranking. Ich optimiere Ihre Webseitenperformance, genau nach Ihren Bedarf. Ob durch komprimierte Auslieferung, Seitenoptimierung oder ein <abbr title="Content Delivery Network">CDN</abbr>, Ihre Anforderungen sind der Schl&uuml;ssel zur richtigen L&ouml;sung! </p> </div> </div> </div> </div> </div> <div class="row" id="projekte"> <div class="col-lg-12"> <div class="panel panel-default"> <div class="panel-heading2"> <h2>Projekte</h2> </div> <div id="myCarousel" class="carousel slide"> <ol class="carousel-indicators"> <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <li data-target="#myCarousel" data-slide-to="1"></li> <li data-target="#myCarousel" data-slide-to="2"></li> <li data-target="#myCarousel" data-slide-to="3"></li> <li data-target="#myCarousel" data-slide-to="4"></li> <li data-target="#myCarousel" data-slide-to="5"></li> </ol> <div class="carousel-inner"> <div class="active item"> <p align="center"> <img src="//cdn.irhh.de/static/img/artlaw.jpg" class="img-responsive" alt="Artesanias Lawal"> </p> <div class="carousel-caption"> <h4><a href="http://www.artesanias-lawal.de" target="_blank" alt="Artesanias Lawal" onClick="ga('send', 'event', 'Outbound', 'carousel', 'artlaw');">Artesanias Lawal</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Homepage </p> </div> </div> <div class="item"> <p align="center"> <img src="//cdn.irhh.de/static/img/pflege.jpg" class="img-responsive" alt="Pflegedienst Reichert-Scharifi"> </p> <div class="carousel-caption"> <h4><a href="http://www.pflegedienst-reichert-scharifi.de" target="_blank" alt="Pflegedienst Reichert-Scharifi" onClick="ga('send', 'event', 'Outbound', 'carousel', 'pflegedienst');">Pflegedienst Reichert-Scharifi</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Homepage </p> </div> </div> <div class="item"> <p align="center"> <img src="//cdn.irhh.de/static/img/blog.irhh.jpg" class="img-responsive" alt="blog.irhh.de" onClick="ga('send', 'event', 'Outbound', 'carousel', 'blog');"> </p> <div class="carousel-caption"> <h4><a href="http://blog.irhh.de" target="_blank">blog.irhh.de</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Design und Inhalte </p> </div> </div> <div class="item"> <p align="center"> <img src="//cdn.irhh.de/static/img/baui.jpg" class="img-responsive"> </p> <div class="carousel-caption"> <h4><a href="http://www.bauikinder.de" target="_blank" alt="BauiKinder" onClick="ga('send', 'event', 'Outbound', 'carousel', 'bauikinder');">BauiKinder</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Flyer </p> </div> </div> <div class="item"> <p align="center"> <img src="//cdn.irhh.de/static/img/movi.jpg" class="img-responsive"> </p> <div class="carousel-caption"> <h4><a href="http://www.movimental.de" target="_blank" alt="Movimental" onClick="ga('send', 'event', 'Outbound', 'carousel', 'movimental');">Movimental</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Homepage </p> </div> </div> <div class="item"> <p align="center"> <img src="//cdn.irhh.de/static/img/ln.jpg" class="img-responsive"> </p> <div class="carousel-caption"> <h4><a href="http://logicalnetworks.de" target="_blank" alt="Logical Networks" onClick="ga('send', 'event', 'Outbound', 'carousel', 'logicalnetworks');">Logical Networks</a></h4> <p> <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Visitenkarten </p> </div> </div> </div> <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a> <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a> </div> </div> </div> </div> <div class="row" id="qualifikation"> <div class="col-lg-8"> <div class="panel panel-default"> <div class="panel-heading2"> <h2>Qualifikation</h2> </div> <div class="row"> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/mcts2013.png"> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/mcitp2013.png"> </div> <div class="col-lg-4" align="center"> <img src="//cdn.irhh.de/static/img/mcsa2013.png"> </div> </div> </div> </div> <div class="col-lg-4"> <div class="panel panel-default" id="kontakt"> <div class="panel-heading2"> <h2>Kontakt</h2> </div> <address> <img src="//cdn.irhh.de/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;<a href="http://www.google.com/recaptcha/mailhide/d?k=01xQa6jjkti2ZbOV8Htqo3yQ==&amp;c=FgMu8wGlxxukyh7KckH1SA==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501xQa6jjkti2ZbOV8Htqo3yQ\75\75\46c\75FgMu8wGlxxukyh7KckH1SA\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="E-Mail Adresse anzeigen">...</a>@irhh.de </address> <address> <img src="//cdn.irhh.de/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;<a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');">&#64;jkanone</a> </address> </div> </div> </div> </div> <div id="footer"> <div class="container"> <div class="row"> <div class="col-lg-12"> <p class="text-muted credit" align="center"> &copy; 2013 - irhh.de &nbsp; Build with <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Based on <a href="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'whiteplum');">White Plum</a> Theme. Icons by <a href="http://iconmonstr.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'iconmonstr');">iconmonstr</a>. Fonts by <a href="https://typekit.com" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Powered by <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>. </p> </div> </div> </div> <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> </div> </div> <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script> <script type="text/javascript" src="static/js/jquery.easing.1.3.min.gz.js"></script> <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> <script type="text/javascript">
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<!-- Wrap all page content here -->
+<div id="wrap">
+  <div class="navbar navbar-fixed-top">
+    <div class="container">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a href="http://irhh.de" class="navbar-brand" onClick="ga('send', 'event', 'Nav', 'klick', 'brand');">irhh.de</a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home" onClick="ga('send', 'event', 'Nav', 'klick', 'home');"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="#leistungen" onClick="ga('send', 'event', 'Nav', 'klick', 'leistungen');">Leistungen</a></li>
+          <li><a href="#projekte" onClick="ga('send', 'event', 'Nav', 'klick', 'projekte');">Projekte</a></li>
+          <li><a href="#qualifikation" onClick="ga('send', 'event', 'Nav', 'klick', 'qualifikation');">Qualifikation</a></li>          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tint"></span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="text-muted" align="center"><h4>Farbwechsler</h4></li>
+              <li class="grey"><a href="javascript:cssNachladen('static/css/color/1.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'grey');"><span class="glyphicon glyphicon-stop"></span> grey</a></li>
+              <li class="mocha"><a href="javascript:cssNachladen('static/css/color/2.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'mocha');"><span class="glyphicon glyphicon-stop"></span> mocha</a></li>
+              <li class="orange"><a href="javascript:cssNachladen('static/css/color/3.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'orange');"><span class="glyphicon glyphicon-stop"></span> orange</a></li>
+              <li class="pink"><a href="javascript:cssNachladen('static/css/color/4.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pink');"><span class="glyphicon glyphicon-stop"></span> pink</a></li>
+              <li class="melon"><a href="javascript:cssNachladen('static/css/color/5.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'melon');"><span class="glyphicon glyphicon-stop"></span> melon</a></li>
+              <li class="purple"><a href="javascript:cssNachladen('static/css/color/6.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'purple');"><span class="glyphicon glyphicon-stop"></span> purple</a></li>
+              <li class="blue"><a href="javascript:cssNachladen('static/css/color/7.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'blue');"><span class="glyphicon glyphicon-stop"></span> blue</a></li>
+              <li class="pool"><a href="javascript:cssNachladen('static/css/color/8.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pool');"><span class="glyphicon glyphicon-stop"></span> pool</a></li>
+              <li class="green"><a href="javascript:cssNachladen('static/css/color/9.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'green');"><span class="glyphicon glyphicon-stop"></span> green</a></li>
+              <li class="olive"><a href="javascript:cssNachladen('static/css/color/10.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'olive');"><span class="glyphicon glyphicon-stop"></span> olive</a></li>
+            </ul>
+        </li>  
+        <p class="navbar-text" vertical-align="middle">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://irhh.de" data-lang="en" data-count="none" >Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </p>
+        <!-- Button trigger modal -->
+        <a data-toggle="modal" href="imprint.html" data-target="#myModal" class="navbar-text"  onClick="ga('send', 'pageview', 'imprint.html');">Impressum</a>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="home">
+      <div class="jumbotron">
+        <h1>irhh.de <small>irRational hamburg</small></h1>
+        <p>
+           Willkommen bei irhh.de, Ihrem IT-Dienstleister aus Hamburg! Als IT-Profi mit langj&auml;hriger Erfahrung biete ich Ihnen Unterst&uuml;tzung bei allen Fragen und Problemen rund um die IT. Mein Fokus liegt dabei auf Windows-Server-Infrastruktur, Virtualisierung und Cloud-L&ouml;sungen. Als kreativen Ausgleich dazu entwickle und designe ich Webseiten und optimiere diese f&uuml;r Performance. 
+        </p>
+      </div>
+    </div>
+    <div class="row" id="leistungen">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading2">
+            <h2>Leistungen</h2>
+          </div>
+          <div class="row">
+            
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/tools-11-icon.png" alt="systemadministration" class="icon"/>
+              <h3>Systemadministration</h3>
+              <p>
+                Ob es um einen neuen Benutzeraccount, einen <abbr title="Virtual Private Network">VPN</abbr>-Zugang oder die Servermigration geht: Bei der Systemadministration sollte man wissen, was man tut. Nicht nur, da bei vielen Eingriffen ins System das Risiko besteht, Sicherheitsl&uuml;cken zu verursachen. H&auml;ufig enden Versuche, selbst Hand anzulegen, in instabilen Bastell&ouml;sungen, die viel mehr Zeit gekostet haben, als urspr&uuml;nglich geplant. Daher ist es meistens sinnvoller, administrative Aufgaben an einen externen Dienstleister abzugeben, denn dass schont nicht nur die Nerven, sondern auch den Geldbeutel. Als erfahrener Systemadministrator im Windows-Umfeld unterst&uuml;tze ich Sie bei allen Aufgaben der IT, professionell, zuverl&auml;ssig und umkompliziert!
+              </p>
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/monitoring-5-icon.png" alt="serverwartung" class="icon"/>
+              <h3>Serverwartung</h3>
+              <p>
+                Gerade kleine und mittlere Unternehmen haben h&auml;ufig nicht die finanziellen Mittel festangestellte Systemadministratoren zu besch&auml;ftigen. Dennoch ist es wichtig, die IT-Infrastruktur nicht sich selbst zu &uuml;berlassen. Regelm&auml;&szlig;iges Monitoring und Warten von Servern kann viele Probleme bereits fr&uuml;hzeitig aufdecken. So k&ouml;nnen rechtzeitig Gegenma&szlig;nahmen getroffen und Probleme gel&ouml;st werden, bevor sie sp&uuml;rbare Auswirkungen auf den Gesch&auml;ftsbetrieb haben. Ich biete Ihnen regelm&auml;&szlig;ige und fachm&auml;nnische Serverwartung zu fairen Preisen, ganz nach Ihrem Bedarf.
+              </p>
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/server-6-icon.png" alt="infrastrukturplanung" class="icon"/>
+              <h3>Infrastrukturplanung</h3>
+              <p>
+                Die IT-Infrastruktur ist heute erfolgskritischer Bestandteil jedes Gesch&auml;ftsprozesses. Daher bedarf es sorgf&auml;ltiger Planung und Entwicklung der Infrastruktur. So bieten z.B. Virtualisierung und Cloud-Dienste vielf&auml;ltige M&ouml;glichkeiten, die allerdings nicht f&uuml;r jedes Unternehmen nur von Vorteil sein m&uuml;ssen. Ich biete Ihnen von der einfachen Beratung bis zur umfangreichen Planung und Implementierung, Unterst&uuml;tzung bei allen Fragen rund um Ihre IT-Infrastruktur. Virtualisierung, Management und (Private-)Cloud L&ouml;sungen basierend auf Windows-Server-Produkten sind dabei meine Kernkompetenz.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            &nbsp;
+          </div>
+          <div class="row">
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/user-8-icon.png" alt="beratung" class="icon"/>
+              <h3>Beratung</h3>
+              <p>
+                Ganz egal, ob es um den Einkauf neuer Hardware geht oder um die Einf&uuml;hrung von neuer Software; die zentralen Fragen lauten meist: <i>Was ist das richtige f&uuml;r unser Unternehmen? Was erf&uuml;llt unsere Anforderungen, bietet aber ein gutes Preis-Leistungs-Verh&auml;ltnis?</i> So einfach die Fragen sind, so schwer sind die Antworten. Der Markt bietet vielf&auml;ltige L&ouml;sungen, das Problem ist es, die richtigen auszuw&auml;hlen. Hier hilft dann auch kein Google weiter, ohne die richtige Erfahrung, ist es schwierig die richtigen Entscheidungen in einem komplexen Umfeld zu treffen. Ich unterst&uuml;tze Sie bei der Entscheidungsfindung und berate Sie kompetent zu Hard- und Softwarefragen.
+              </p>
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/globe-4-icon.png" alt="webdesign" class="icon"/>
+              <h3>Webdesign</h3>
+              <p>
+                Die richtige Webseite richtet sich nach dem Bedarf. Die Entwicklung einer kleinen, statischen Portfolio-Seite ben&ouml;tigt eine andere Herangehensweise als eine umfangreiche, dynamische Unternehmens-Seite. Ich entwickle Ihre Seite bedarfsgerecht, mit zeitgem&auml;&szlig;en Werkzeugen, basierend z.B. auf Bootstrap oder Wordpress. Selbstverst&auml;ndlich sind auch Performance- und Suchmaschinenoptimierung Teil des Entwicklungsprozesses.
+              </p>
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/time-9-icon.png" alt="performance optimierung" class="icon"/>
+              <h3>Performance Optimierung</h3>
+              <p>
+                Auch in Zeiten schneller Internetanschl&uuml;sse spielt die Performance von Webseiten eine wichtige Rolle. Neben der Usererfahrung beeinflusst die Performance auch das Google-Ranking. Ich optimiere Ihre Webseitenperformance, genau nach Ihren Bedarf. Ob durch komprimierte Auslieferung, Seitenoptimierung oder ein <abbr title="Content Delivery Network">CDN</abbr>, Ihre Anforderungen sind der Schl&uuml;ssel zur richtigen L&ouml;sung!
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="projekte">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading2">
+            <h2>Projekte</h2>
+          </div>
+          <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <p align="center">
+                  <img src="/static/img/artlaw.jpg" class="img-responsive" alt="Artesanias Lawal">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://www.artesanias-lawal.de" target="_blank" alt="Artesanias Lawal" onClick="ga('send', 'event', 'Outbound', 'carousel', 'artlaw');">Artesanias Lawal</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Homepage
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p align="center">
+                  <img src="/static/img/pflege.jpg" class="img-responsive" alt="Pflegedienst Reichert-Scharifi">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://www.pflegedienst-reichert-scharifi.de" target="_blank" alt="Pflegedienst Reichert-Scharifi" onClick="ga('send', 'event', 'Outbound', 'carousel', 'pflegedienst');">Pflegedienst Reichert-Scharifi</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Homepage
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p align="center">
+                  <img src="/static/img/blog.irhh.jpg" class="img-responsive" alt="blog.irhh.de" onClick="ga('send', 'event', 'Outbound', 'carousel', 'blog');">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://blog.irhh.de" target="_blank">blog.irhh.de</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Design und Inhalte
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p align="center">
+                  <img src="/static/img/baui.jpg" class="img-responsive">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://www.bauikinder.de" target="_blank" alt="BauiKinder" onClick="ga('send', 'event', 'Outbound', 'carousel', 'bauikinder');">BauiKinder</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Flyer
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p align="center">
+                  <img src="/static/img/movi.jpg" class="img-responsive">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://www.movimental.de" target="_blank" alt="Movimental" onClick="ga('send', 'event', 'Outbound', 'carousel', 'movimental');">Movimental</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Homepage
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <p align="center">
+                  <img src="/static/img/ln.jpg" class="img-responsive">
+                </p>
+                <div class="carousel-caption">
+                  <h4><a href="http://logicalnetworks.de" target="_blank" alt="Logical Networks" onClick="ga('send', 'event', 'Outbound', 'carousel', 'logicalnetworks');">Logical Networks</a></h4>
+                  <p>
+                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Visitenkarten
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="qualifikation">
+      <div class="col-lg-8">
+        <div class="panel panel-default">
+          <div class="panel-heading2">
+            <h2>Qualifikation</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/mcts2013.png">
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/mcitp2013.png">
+            </div>
+            <div class="col-lg-4" align="center">
+              <img src="/static/img/mcsa2013.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel panel-default" id="kontakt">
+          <div class="panel-heading2">
+            <h2>Kontakt</h2>
+          </div>
+          <address>
+          <img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info@irhh.de
+          </address>
+          <address>
+          <img src="/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;<a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');">&#64;jkanone</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-muted credit" align="center">
+             &copy; 2013 - irhh.de &nbsp; Build with <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Based on <a href="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'whiteplum');">White Plum</a> Theme. Icons by <a href="http://iconmonstr.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'iconmonstr');">iconmonstr</a>. Fonts by <a href="https://typekit.com" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Powered by <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+    </div>
+    <!-- /.modal -->
+  </div>
+<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
     !function ($) {
         $(function(){
             var $root = $('html, body');
@@ -43,4 +314,6 @@
         interval: 5000
     });
     $('.carousel').carousel('cycle');
-});</script> </body> </html>
+});</script>
+  </body>
+  </html>
