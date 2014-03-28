@@ -52,8 +52,14 @@
           <li class="active"><a href="#home" onClick="ga('send', 'event', 'Nav', 'klick', 'home');"><span class="glyphicon glyphicon-home"></span></a></li>
           <li><a href="#services" onClick="ga('send', 'event', 'Nav', 'klick', 'services');">Services</a></li>
           <li><a href="#portfolio" onClick="ga('send', 'event', 'Nav', 'klick', 'portfolio');">Portfolio</a></li>
-          <li><a href="#certifications" onClick="ga('send', 'event', 'Nav', 'klick', 'certifications');">Certifications</a></li>       
-          <li><a href="#contact" onClick="ga('send', 'event', 'Nav', 'klick', 'contact');">Contact</a></li> 
+          <li><a href="#certifications" onClick="ga('send', 'event', 'Nav', 'klick', 'certifications');">Certifications</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="mailto:info@irhh.de"><img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info @ irhh.de</a></li>
+            <li><a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');"><img src="/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;&#64;jkanone</a></li>
+          </ul>
+        </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -87,8 +93,11 @@
       <div class="jumbotron">
         <h1>irhh.de <small>irRational hamburg</small></h1>
         <p>
-           Willkommen bei irhh.de, Ihrem IT-Dienstleister aus Hamburg! Als IT-Profi mit langj&auml;hriger Erfahrung biete ich Ihnen Unterst&uuml;tzung bei allen Fragen und Problemen rund um die IT. Mein Fokus liegt dabei auf Windows-Server-Infrastruktur, Virtualisierung und Cloud-L&ouml;sungen. Als kreativen Ausgleich dazu entwickle und designe ich Webseiten und optimiere diese f&uuml;r Performance. 
+           Hi, my name is Rasmus! I'm freelancing IT guy, settled in Hamburg, Germany. You can hire me for different IT stuff. I'm focused on Windows Server tasks, especially Windows Server Infrastructure, Virtualization with Hyper-V, Private Cloud with System Center, Messaging with Exchange and Collaboration with SharePoint. I also build and design websites. Feel free to contact me via email or twitter.
         </p>
+        <p>
+        If you're interested in reading something about IT related problems, just come over and visit my blog:</p>
+        <p><a href="http://blog.irhh.de" target="_blank" class="btn btn-primary btn-lg" role="button" onClick="ga('send', 'event', 'But', 'click', 'blog');">blog.irhh.de &raquo;</a></p>
       </div>
     </div>
     <div class="row" id="services">
@@ -97,57 +106,79 @@
           <div class="panel-heading2">
             <h2>Services</h2>
           </div>
-          <div class="row">
             
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/tools-11-icon.png" alt="systemadministration" class="icon"/>
-              <h3>Systemadministration</h3>
-              <p>
-                Ob es um einen neuen Benutzeraccount, einen <abbr title="Virtual Private Network">VPN</abbr>-Zugang oder die Servermigration geht: Bei der Systemadministration sollte man wissen, was man tut. Nicht nur, da bei vielen Eingriffen ins System das Risiko besteht, Sicherheitsl&uuml;cken zu verursachen. H&auml;ufig enden Versuche, selbst Hand anzulegen, in instabilen Bastell&ouml;sungen, die viel mehr Zeit gekostet haben, als urspr&uuml;nglich geplant. Daher ist es meistens sinnvoller, administrative Aufgaben an einen externen Dienstleister abzugeben, denn dass schont nicht nur die Nerven, sondern auch den Geldbeutel. Als erfahrener Systemadministrator im Windows-Umfeld unterst&uuml;tze ich Sie bei allen Aufgaben der IT, professionell, zuverl&auml;ssig und umkompliziert!
-              </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-9 ">
+                        <h3 align="right">Systems Administration</h3>
+                        <p align="right">
+                            Deployment and configuration of Windows and Linux Servers, installation of serverroles. Planning and deployment of virtualization, Exchange, SharePoint and Private Clouds.
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="/static/img/tools-11-icon.png" alt="systemsadministration" class="icon"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h3 align="right">Server Maintenance</h3>
+                        <p align="right">
+                            Monitoring of Servers, Applications and Networks, resolving errors, keep the infrastructure up and running.
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="/static/img/monitoring-5-icon.png" alt="servermaintenance" class="icon"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <h3 align="right">Infrastructure Planning</h3>
+                        <p align="right">
+                            Planning of Server and Network Infrastructure, no matter if on premises, private or public cloud or a hybrid deployment.
+                        </p>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="/static/img/server-6-icon.png" alt="infrastructureplanning" class="icon"/>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/monitoring-5-icon.png" alt="serverwartung" class="icon"/>
-              <h3>Serverwartung</h3>
-              <p>
-                Gerade kleine und mittlere Unternehmen haben h&auml;ufig nicht die finanziellen Mittel festangestellte Systemadministratoren zu besch&auml;ftigen. Dennoch ist es wichtig, die IT-Infrastruktur nicht sich selbst zu &uuml;berlassen. Regelm&auml;&szlig;iges Monitoring und Warten von Servern kann viele Probleme bereits fr&uuml;hzeitig aufdecken. So k&ouml;nnen rechtzeitig Gegenma&szlig;nahmen getroffen und Probleme gel&ouml;st werden, bevor sie sp&uuml;rbare Auswirkungen auf den Gesch&auml;ftsbetrieb haben. Ich biete Ihnen regelm&auml;&szlig;ige und fachm&auml;nnische Serverwartung zu fairen Preisen, ganz nach Ihrem Bedarf.
-              </p>
+             <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="/static/img/user-8-icon.png" alt="consulting" class="icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3>Consulting</h3>
+                        <p>
+                            Need to buy hardware or decide if to take some services to the cloud? Just ask me!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="/static/img/globe-4-icon.png" alt="webdesign" class="icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3>Webdesign</h3>
+                        <p>
+                            Everything around your website, from new websites over relaunches to blogs... Build with Bootstrap, Wordpress, Octopress.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="/static/img/time-9-icon.png" alt="performanceoptimization" class="icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3>Performance Optimization</h3>
+                        <p>Optimization of websites for faster loading and enhanced user experience.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/server-6-icon.png" alt="infrastrukturplanung" class="icon"/>
-              <h3>Infrastrukturplanung</h3>
-              <p>
-                Die IT-Infrastruktur ist heute erfolgskritischer Bestandteil jedes Gesch&auml;ftsprozesses. Daher bedarf es sorgf&auml;ltiger Planung und Entwicklung der Infrastruktur. So bieten z.B. Virtualisierung und Cloud-Dienste vielf&auml;ltige M&ouml;glichkeiten, die allerdings nicht f&uuml;r jedes Unternehmen nur von Vorteil sein m&uuml;ssen. Ich biete Ihnen von der einfachen Beratung bis zur umfangreichen Planung und Implementierung, Unterst&uuml;tzung bei allen Fragen rund um Ihre IT-Infrastruktur. Virtualisierung, Management und (Private-)Cloud L&ouml;sungen basierend auf Windows-Server-Produkten sind dabei meine Kernkompetenz.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            &nbsp;
-          </div>
-          <div class="row">
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/user-8-icon.png" alt="beratung" class="icon"/>
-              <h3>Beratung</h3>
-              <p>
-                Ganz egal, ob es um den Einkauf neuer Hardware geht oder um die Einf&uuml;hrung von neuer Software; die zentralen Fragen lauten meist: <i>Was ist das richtige f&uuml;r unser Unternehmen? Was erf&uuml;llt unsere Anforderungen, bietet aber ein gutes Preis-Leistungs-Verh&auml;ltnis?</i> So einfach die Fragen sind, so schwer sind die Antworten. Der Markt bietet vielf&auml;ltige L&ouml;sungen, das Problem ist es, die richtigen auszuw&auml;hlen. Hier hilft dann auch kein Google weiter, ohne die richtige Erfahrung, ist es schwierig die richtigen Entscheidungen in einem komplexen Umfeld zu treffen. Ich unterst&uuml;tze Sie bei der Entscheidungsfindung und berate Sie kompetent zu Hard- und Softwarefragen.
-              </p>
-            </div>
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/globe-4-icon.png" alt="webdesign" class="icon"/>
-              <h3>Webdesign</h3>
-              <p>
-                Die richtige Webseite richtet sich nach dem Bedarf. Die Entwicklung einer kleinen, statischen Portfolio-Seite ben&ouml;tigt eine andere Herangehensweise als eine umfangreiche, dynamische Unternehmens-Seite. Ich entwickle Ihre Seite bedarfsgerecht, mit zeitgem&auml;&szlig;en Werkzeugen, basierend z.B. auf Bootstrap oder Wordpress. Selbstverst&auml;ndlich sind auch Performance- und Suchmaschinenoptimierung Teil des Entwicklungsprozesses.
-              </p>
-            </div>
-            <div class="col-lg-4" align="center">
-              <img src="/static/img/time-9-icon.png" alt="performance optimierung" class="icon"/>
-              <h3>Performance Optimierung</h3>
-              <p>
-                Auch in Zeiten schneller Internetanschl&uuml;sse spielt die Performance von Webseiten eine wichtige Rolle. Neben der Usererfahrung beeinflusst die Performance auch das Google-Ranking. Ich optimiere Ihre Webseitenperformance, genau nach Ihren Bedarf. Ob durch komprimierte Auslieferung, Seitenoptimierung oder ein <abbr title="Content Delivery Network">CDN</abbr>, Ihre Anforderungen sind der Schl&uuml;ssel zur richtigen L&ouml;sung!
-              </p>
-            </div>
-            
-          </div>
+        
+        </div>
+
         </div>
       </div>
     </div>
@@ -255,21 +286,7 @@
         </div>
       </div>
     </div>
-    <div class="row" id="contact">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading2">
-            <h2>Contact</h2>
-          </div>
-          <address>
-          <img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info @ irhh.de
-          </address>
-          <address>
-          <img src="/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;<a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');">&#64;jkanone</a>
-          </address>
-        </div>
-      </div>
-    </div>
+
   </div>
   <div id="footer">
     <div class="container">
