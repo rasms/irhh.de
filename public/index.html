@@ -50,15 +50,16 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#home" onClick="ga('send', 'event', 'Nav', 'klick', 'home');"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li><a href="#leistungen" onClick="ga('send', 'event', 'Nav', 'klick', 'leistungen');">Leistungen</a></li>
-          <li><a href="#projekte" onClick="ga('send', 'event', 'Nav', 'klick', 'projekte');">Projekte</a></li>
-          <li><a href="#qualifikation" onClick="ga('send', 'event', 'Nav', 'klick', 'qualifikation');">Qualifikation</a></li>          
+          <li><a href="#services" onClick="ga('send', 'event', 'Nav', 'klick', 'services');">Services</a></li>
+          <li><a href="#portfolio" onClick="ga('send', 'event', 'Nav', 'klick', 'portfolio');">Portfolio</a></li>
+          <li><a href="#certifications" onClick="ga('send', 'event', 'Nav', 'klick', 'certifications');">Certifications</a></li>       
+          <li><a href="#contact" onClick="ga('send', 'event', 'Nav', 'klick', 'contact');">Contact</a></li> 
         </ul>
         <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-tint"></span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li class="text-muted" align="center"><h4>Farbwechsler</h4></li>
+              <li class="text-muted" align="center"><h4>Colorchanger</h4></li>
               <li class="grey"><a href="javascript:cssNachladen('static/css/color/1.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'grey');"><span class="glyphicon glyphicon-stop"></span> grey</a></li>
               <li class="mocha"><a href="javascript:cssNachladen('static/css/color/2.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'mocha');"><span class="glyphicon glyphicon-stop"></span> mocha</a></li>
               <li class="orange"><a href="javascript:cssNachladen('static/css/color/3.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'orange');"><span class="glyphicon glyphicon-stop"></span> orange</a></li>
@@ -76,7 +77,7 @@
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </p>
         <!-- Button trigger modal -->
-        <a data-toggle="modal" href="imprint.html" data-target="#myModal" class="navbar-text"  onClick="ga('send', 'pageview', 'imprint.html');">Impressum</a>
+        <a data-toggle="modal" href="imprint.html" data-target="#myModal" class="navbar-text"  onClick="ga('send', 'pageview', 'imprint.html');">Imprint</a>
       </ul>
       </div>
     </div>
@@ -90,11 +91,11 @@
         </p>
       </div>
     </div>
-    <div class="row" id="leistungen">
+    <div class="row" id="services">
       <div class="col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading2">
-            <h2>Leistungen</h2>
+            <h2>Services</h2>
           </div>
           <div class="row">
             
@@ -150,11 +151,11 @@
         </div>
       </div>
     </div>
-    <div class="row" id="projekte">
+    <div class="row" id="portfolio">
       <div class="col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading2">
-            <h2>Projekte</h2>
+            <h2>Portfolio</h2>
           </div>
           <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
@@ -163,7 +164,6 @@
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
               <li data-target="#myCarousel" data-slide-to="4"></li>
-              <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
             <!-- Carousel items -->
             <div class="carousel-inner">
@@ -174,7 +174,7 @@
                 <div class="carousel-caption">
                   <h4><a href="http://www.artesanias-lawal.de" target="_blank" alt="Artesanias Lawal" onClick="ga('send', 'event', 'Outbound', 'carousel', 'artlaw');">Artesanias Lawal</a></h4>
                   <p>
-                    <span class="glyphicon glyphicon-ok"></span> Homepage
+                    <span class="glyphicon glyphicon-ok"></span> Website
                   </p>
                 </div>
               </div>
@@ -185,18 +185,7 @@
                 <div class="carousel-caption">
                   <h4><a href="http://www.pflegedienst-reichert-scharifi.de" target="_blank" alt="Pflegedienst Reichert-Scharifi" onClick="ga('send', 'event', 'Outbound', 'carousel', 'pflegedienst');">Pflegedienst Reichert-Scharifi</a></h4>
                   <p>
-                    <span class="glyphicon glyphicon-ok"></span> Homepage
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <p align="center">
-                  <img src="/static/img/blog.irhh.jpg" class="img-responsive" alt="blog.irhh.de" onClick="ga('send', 'event', 'Outbound', 'carousel', 'blog');">
-                </p>
-                <div class="carousel-caption">
-                  <h4><a href="http://blog.irhh.de" target="_blank">blog.irhh.de</a></h4>
-                  <p>
-                    <span class="glyphicon glyphicon-ok"></span> Design und Inhalte
+                    <span class="glyphicon glyphicon-ok"></span> Website
                   </p>
                 </div>
               </div>
@@ -207,7 +196,7 @@
                 <div class="carousel-caption">
                   <h4><a href="http://www.bauikinder.de" target="_blank" alt="BauiKinder" onClick="ga('send', 'event', 'Outbound', 'carousel', 'bauikinder');">BauiKinder</a></h4>
                   <p>
-                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Flyer
+                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Website 
                   </p>
                 </div>
               </div>
@@ -218,7 +207,7 @@
                 <div class="carousel-caption">
                   <h4><a href="http://www.movimental.de" target="_blank" alt="Movimental" onClick="ga('send', 'event', 'Outbound', 'carousel', 'movimental');">Movimental</a></h4>
                   <p>
-                    <span class="glyphicon glyphicon-ok"></span> Homepage
+                    <span class="glyphicon glyphicon-ok"></span> Website
                   </p>
                 </div>
               </div>
@@ -229,7 +218,7 @@
                 <div class="carousel-caption">
                   <h4><a href="http://logicalnetworks.de" target="_blank" alt="Logical Networks" onClick="ga('send', 'event', 'Outbound', 'carousel', 'logicalnetworks');">Logical Networks</a></h4>
                   <p>
-                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Homepage &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Visitenkarten
+                    <span class="glyphicon glyphicon-ok"></span> Logo &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Website &nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span> Businesscards
                   </p>
                 </div>
               </div>
@@ -241,35 +230,39 @@
         </div>
       </div>
     </div>
-    <div class="row" id="qualifikation">
-      <div class="col-lg-8">
+    <div class="row" id="certifications">
+      <div class="col-lg-12">
         <div class="panel panel-default">
           <div class="panel-heading2">
-            <h2>Qualifikation</h2>
+            <h2>Certifications</h2>
           </div>
           <div class="row">
-            <div class="col-sm-3" align="center">
-              <img class="img-responsive" src="/static/img/mcts.png" alt="MCTS">
-            </div>
-            <div class="col-sm-3" align="center">
-              <img class="img-responsive" src="/static/img/mcitp.png" alt="MCITP">
-            </div>
-            <div class="col-sm-3" align="center">
-              <img class="img-responsive" src="/static/img/mcsa.png" alt="MCSA">
-            </div>
-            <div class="col-sm-3" align="center">
-              <img class="img-responsive" src="/static/img/mcse.png" alt="MCSE">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-sm-3" align="center">
+                  <img class="img-responsive" src="/static/img/mcts.png" alt="MCTS">
+                </div>
+                <div class="col-sm-3" align="center">
+                  <img class="img-responsive" src="/static/img/mcitp.png" alt="MCITP">
+                </div>
+                <div class="col-sm-3" align="center">
+                  <img class="img-responsive" src="/static/img/mcsa.png" alt="MCSA">
+                </div>
+                <div class="col-sm-3" align="center">
+                  <img class="img-responsive" src="/static/img/mcse.png" alt="MCSE">
+                </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="panel panel-default" id="kontakt">
+    </div>
+    <div class="row" id="contact">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
           <div class="panel-heading2">
-            <h2>Kontakt</h2>
+            <h2>Contact</h2>
           </div>
           <address>
-          <img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info@irhh.de
+          <img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info @ irhh.de
           </address>
           <address>
           <img src="/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;<a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');">&#64;jkanone</a>
@@ -283,7 +276,7 @@
       <div class="row">
         <div class="col-lg-12">
           <p class="text-muted credit" align="center">
-             &copy; 2013 - irhh.de &nbsp; Build with <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Based on <a href="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'whiteplum');">White Plum</a> Theme. Icons by <a href="http://iconmonstr.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'iconmonstr');">iconmonstr</a>. Fonts by <a href="https://typekit.com" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Powered by <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>.
+             &copy; 2014 - irhh.de &nbsp; Build with <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Based on <a href="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'whiteplum');">White Plum</a> Theme. Icons by <a href="http://iconmonstr.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'iconmonstr');">iconmonstr</a>. Fonts by <a href="https://typekit.com" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Powered by <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>.
           </p>
         </div>
       </div>
