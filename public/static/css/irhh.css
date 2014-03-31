@@ -20,8 +20,8 @@ body {
 
 #footer {
     height: 130px;
-    background-color: #222;
-    margin-top: 50px;
+    background-color: #444;
+    z-index: 13;
 }
 @media screen and (min-width: 768px) {
     #footer {
@@ -30,7 +30,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
     #footer {
-        height: 62px;
+        height: 90px;
     }
 }
 /* Custom page CSS
@@ -682,6 +682,44 @@ fieldset[disabled] .btn-link {
     color: #cccccc;
     background-color: transparent;
 }
+
+.navbar-nav > .mail > a {
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+
+.navbar-nav > .twitter > a {
+    font-size: 24px;
+    margin-bottom: -5px;
+    margin-right: -15px;
+}
+.navbar-nav > .mail > a:hover,
+.navbar-nav > .mail > a:focus {
+  color: #222;
+  background-color: transparent;
+}
+.navbar-nav > .twitter > a:hover,
+.navbar-nav > .twitter > a:focus {
+  color: #55acee;
+  background-color: transparent;
+}
+.navbar-nav > .github > a:hover,
+.navbar-nav > .github > a:focus {
+  color: #000000;
+  background-color: transparent;
+}
+.navbar-nav > .youtube > a:hover,
+.navbar-nav > .youtube > a:focus {
+  color: #e52d27;
+  background-color: transparent;
+}
+.navbar-nav > .googleplus > a:hover,
+.navbar-nav > .googleplus > a:focus {
+  color: #d34836;
+  background-color: transparent;
+}
+
 .navbar-nav.pull-right {
     width: 100%;
 }
@@ -713,7 +751,7 @@ fieldset[disabled] .btn-link {
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
-    color: #cccccc;
+    color: #666;
     text-align: center;
 }
 .navbar-brand:hover,
@@ -1048,7 +1086,7 @@ pre {
     border-radius: 0px;
 }
 .jumbotron {
-    padding: 50px;
+    padding-top: 80px;
     margin-bottom: 0px;
     font-size: 17px;
     font-weight: 100;
@@ -1083,7 +1121,7 @@ pre {
 }
 @media screen and (min-width: 768px) {
     .jumbotron {
-        padding: 80px 60px;
+        
         border-radius: 0px;
         font-size: 19px;
     }
@@ -1097,7 +1135,7 @@ pre {
 }
 @media screen and (min-width: 992px) {
     .jumbotron {
-        padding: 80px 60px;
+        
         border-radius: 0px;
         font-size: 21px;
     }
@@ -1123,14 +1161,14 @@ h1 small,
 }
 .jumbotron .btn-primary {
     background-color: #aaaaaa;
-    border-color: #777777;
+    /*border-color: #777777;*/
 }
 .jumbotron .btn-primary:hover,
 .jumbotron .btn-primary:focus,
 .jumbotron .btn-primary:active,
 .jumbotron .btn-primary.active {
     background-color: #777777;
-    border-color: #555555;
+    /*border-color: #555555;*/
 }
 .nav-pills > li.active > a,
 .nav-pills > li > a:hover {
@@ -1272,4 +1310,74 @@ h1 small,
 #certifications {
     background-color: #fff;
     z-index: 12;
+    padding-bottom: 50px;
+}
+
+/*icomoon icons*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('/static/fonts/icomoon.eot?-fcp8a0');
+	src:url('/static/fonts/icomoon.eot?#iefix-fcp8a0') format('embedded-opentype'),
+		url('/static/fonts/icomoon.woff?-fcp8a0') format('woff'),
+		url('/static/fonts/icomoon.ttf?-fcp8a0') format('truetype'),
+		url('/static/fonts/icomoon.svg?-fcp8a0#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+	content: "\e600";
+}
+.icon-stopwatch:before {
+	content: "\e601";
+}
+.icon-user:before {
+	content: "\e602";
+}
+.icon-wrench:before {
+	content: "\e603";
+}
+.icon-cogs:before {
+	content: "\e604";
+}
+.icon-stats:before {
+	content: "\e605";
+}
+.icon-meter:before {
+	content: "\e606";
+}
+.icon-cloud:before {
+	content: "\e607";
+}
+.icon-earth:before {
+	content: "\e608";
+}
+.icon-envelope:before {
+	content: "\e609";
+}
+.icon-googleplus:before {
+	content: "\e60a";
+}
+.icon-twitter:before {
+	content: "\e60b";
+}
+.icon-youtube:before {
+	content: "\e60c";
+}
+.icon-github:before {
+	content: "\e60d";
 }

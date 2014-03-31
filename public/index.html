@@ -100,90 +100,19 @@
                         <li>
                             <a href="#certifications" onClick="ga('send', 'event', 'Nav', 'klick', 'certifications');">Certifications</a>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="mailto:info@irhh.de">
-                                        <img src="/static/img/email-11-icon.png" width="24px" height="24px">&nbsp;info @ irhh.de</a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/JKanone" target="_blank" alt="twitter" onClick="ga('send', 'event', 'Twitter', 'klick', 'page');">
-                                        <img src="/static/img/twitter-icon.png" width="24px" height="24px">&nbsp;&#64;jkanone</a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-tint"></span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="text-muted" align="center">
-                                    <h4>Colorchanger</h4>
-                                </li>
-                                <li class="grey">
-                                    <a href="javascript:cssNachladen('static/css/color/1.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'grey');">
-                                        <span class="glyphicon glyphicon-stop"></span>grey</a>
-                                </li>
-                                <li class="mocha">
-                                    <a href="javascript:cssNachladen('static/css/color/2.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'mocha');">
-                                        <span class="glyphicon glyphicon-stop"></span>mocha</a>
-                                </li>
-                                <li class="orange">
-                                    <a href="javascript:cssNachladen('static/css/color/3.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'orange');">
-                                        <span class="glyphicon glyphicon-stop"></span>orange</a>
-                                </li>
-                                <li class="pink">
-                                    <a href="javascript:cssNachladen('static/css/color/4.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pink');">
-                                        <span class="glyphicon glyphicon-stop"></span>pink</a>
-                                </li>
-                                <li class="melon">
-                                    <a href="javascript:cssNachladen('static/css/color/5.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'melon');">
-                                        <span class="glyphicon glyphicon-stop"></span>melon</a>
-                                </li>
-                                <li class="purple">
-                                    <a href="javascript:cssNachladen('static/css/color/6.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'purple');">
-                                        <span class="glyphicon glyphicon-stop"></span>purple</a>
-                                </li>
-                                <li class="blue">
-                                    <a href="javascript:cssNachladen('static/css/color/7.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'blue');">
-                                        <span class="glyphicon glyphicon-stop"></span>blue</a>
-                                </li>
-                                <li class="pool">
-                                    <a href="javascript:cssNachladen('static/css/color/8.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'pool');">
-                                        <span class="glyphicon glyphicon-stop"></span>pool</a>
-                                </li>
-                                <li class="green">
-                                    <a href="javascript:cssNachladen('static/css/color/9.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'green');">
-                                        <span class="glyphicon glyphicon-stop"></span>green</a>
-                                </li>
-                                <li class="olive">
-                                    <a href="javascript:cssNachladen('static/css/color/10.css')" onClick="ga('send', 'event', 'CSS', 'klick', 'olive');">
-                                        <span class="glyphicon glyphicon-stop"></span>olive</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <p class="navbar-text" vertical-align="middle">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://irhh.de" data-lang="en" data-count="none">Tweet</a>
-                            <script>
-                                ! function(d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (!d.getElementById(id)) {
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = "https://platform.twitter.com/widgets.js";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }
-                                }(document, "script", "twitter-wjs");
-                            </script>
-                        </p>
-                        <!-- Button trigger modal -->
-                        <a data-toggle="modal" href="imprint.html" data-target="#myModal" class="navbar-text" onClick="ga('send', 'pageview', 'imprint.html');">Imprint</a>
+                        <li class="mail">
+                    <a href="mailto:info@irhh.de" title="Mail">
+                        <span class="icon-envelope"></span>
+                    </a>
+                </li>
+                        <li class="twitter">
+                    <a href="http://twitter.com/jkanone" title="Twitter">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </li>
+
                     </ul>
                 </div>
             </div>
@@ -229,14 +158,14 @@
                     <div class="row">
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/tools-icon.png" alt="systemsadministration" class="icon" />&nbsp;Systems Administration</h3>
+                                <span class="icon-wrench"></span>&nbsp;Systems Administration</h3>
                             <p>
                                 Deployment and configuration of Windows and Linux Servers, installation of serverroles. Planning and deployment of virtualization, Exchange, SharePoint and Private Clouds.
                             </p>
                         </div>
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/monitoring-icon.png" alt="servermaintenance" class="icon" />&nbsp;Server Maintenance</h3>
+                                <span class="icon-stats"></span>&nbsp;Server Maintenance</h3>
                             <p>
                                 Monitoring of Servers, Applications and Networks, resolving errors, keep the infrastructure up and running.
                             </p>
@@ -244,7 +173,7 @@
 
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/server-icon.png" alt="infrastructureplanning" class="icon" />&nbsp;Infrastructure Planning</h3>
+                                <span class="icon-cloud"></span>&nbsp;Infrastructure Planning</h3>
                             <p>
                                 Planning of Server and Network Infrastructure, no matter if on premises, private or public cloud or a hybrid deployment.
                             </p>
@@ -254,21 +183,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/user-icon.png" alt="consulting" class="icon" />&nbsp;Consulting</h3>
+                                <span class="icon-user"></span>&nbsp;Consulting</h3>
                             <p>
                                 Need to buy hardware or decide if to take some services to the cloud? Just ask me!
                             </p>
                         </div>
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/globe-icon.png" alt="webdesign" class="icon" />&nbsp;Webdesign</h3>
+                                <span class="icon-earth"></span>&nbsp;Webdesign</h3>
                             <p>
                                 Everything around your website, from new websites over relaunches to blogs... Build with Bootstrap, Wordpress, Octopress.
                             </p>
                         </div>
                         <div class="col-md-4">
                             <h3>
-                                <img src="/static/img/time-icon.png" alt="performanceoptimization" class="icon" />&nbsp;Performance Optimization</h3>
+                                <span class="icon-stopwatch"></span>&nbsp;Performance Optimization</h3>
                             <p>Optimization of websites for faster loading and enhanced user experience.</p>
                         </div>
                     </div>
@@ -408,14 +337,22 @@
         <div id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    
+                    <div class="col-md-10 col-md-offset-1">
+                       
+                        
                         <p class="text-muted credit" align="center">
-                            &copy; 2014 - irhh.de &nbsp; Build with
-                            <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Based on
-                            <a href="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'whiteplum');">White Plum</a>Theme. Icons by
-                            <a href="http://iconmonstr.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'iconmonstr');">iconmonstr</a>. Fonts by
+                            Build with
+                            <a href="http://getbootstrap.com/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap 3</a>. Icons by
+                            <a href="http://icomoon.io/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'icomoon');">IcoMoon</a>. Fonts by
                             <a href="https://typekit.com" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Powered by
-                            <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>.
+                            <a href="http://aws.amazon.com/de/" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'aws');">Amazon Web Services</a>.<br>
+                        
+                        &copy; 2014 - irhh.de &nbsp;&middot;&nbsp;
+                         <a href="http://blog.irhh.de" target="_blank">blog</a>
+                        &nbsp;&middot;&nbsp;
+                    <!-- Button trigger modal -->
+                        <a data-toggle="modal" href="/imprint.html" data-target="#myModal" onClick="ga('send', 'pageview', 'imprint.html');">imprint</a>
                         </p>
                     </div>
                 </div>
