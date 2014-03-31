@@ -17,7 +17,7 @@ body {
 /* Set the fixed height of the footer here */
 #footer {
   height: 130px;
-  background-color: #ededed;
+  background-color: #222;
 }
 @media screen and (min-width: 768px) {
   #footer {
@@ -52,14 +52,15 @@ body.modal-open,
 margin-right: 0px;
 }
 img.icon {
-  width: 84px;
-  height: 84px;
+  width: 32px;
+  height: 32px;
   }
 body {
   padding-top: 70px; 
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #444444;
+  line-height: 1.8;
 }
 a {
   color: #cccccc;
