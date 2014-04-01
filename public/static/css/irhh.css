@@ -19,7 +19,7 @@ body {
 /* Set the fixed height of the footer here */
 
 #footer {
-    height: 130px;
+    height: 140px;
     background-color: #444;
     z-index: 13;
 }
@@ -147,7 +147,7 @@ blockquote {
 }
 blockquote p {
     font-size: 17.5px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.25;
 }
 blockquote small {
@@ -245,7 +245,7 @@ blockquote.pull-right {
 }
 .btn-link {
     color: #cccccc;
-    font-weight: 100;
+    font-weight: 300;
     cursor: pointer;
     border-radius: 0;
 }
@@ -665,6 +665,12 @@ fieldset[disabled] .btn-link {
     line-height: 24px;
     border-radius: 0px;
 }
+.navbar-collapse.in > .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
     color: #333333;
@@ -683,11 +689,18 @@ fieldset[disabled] .btn-link {
     background-color: transparent;
 }
 
+.mail,.googleplus,.twitter {
+    float: left;
+}
+
 .navbar-nav > .mail > a {
     font-size: 20px;
     margin-bottom: -5px;
 }
-
+.navbar-nav > .googleplus > a {
+    font-size: 20px;
+    margin-bottom: -5px;
+}
 
 .navbar-nav > .twitter > a {
     font-size: 24px;
@@ -1089,11 +1102,12 @@ pre {
     padding-top: 80px;
     margin-bottom: 0px;
     font-size: 17px;
-    font-weight: 100;
+    font-weight: 300;
     /*line-height: 2.1428571435;*/
     color: #ffffff;
     background-color: transparent;
     position: fixed;
+    width: 100%;
 }
 .jumbotron h1 {
     line-height: 1;
@@ -1107,12 +1121,13 @@ pre {
     line-height: 1.5;
     font-weight: 300;
 }
-.container .jumbotron {
-    border-radius: 0px;
+.jumbotron > .container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .error {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 300;
 }
 .error h1 {
     line-height: 1;
@@ -1149,7 +1164,7 @@ pre {
     }
 }
 .lead {
-    font-weight: 100;
+    font-weight: 300;
 }
 pre {
     color: white;
@@ -1185,7 +1200,7 @@ h1 small,
 }
 .navbar-static-top,
 .navbar-fixed-top {
-    border-top: 2px solid #cccccc;
+    border-top: 2px solid #666;
     -webkit-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
     box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
@@ -1197,7 +1212,7 @@ h1 small,
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
 }
 .btn {
-    font-weight: 100;
+    font-weight: 300;
 }
 .btn-default:hover {
     color: #555555;
@@ -1296,13 +1311,18 @@ h1 small,
 }
 @media screen and (min-width: 768px) {
     #home {
-        min-height: 550px;
+        min-height: 500px;
     }
 }
 #services {
     background-color: #fff;
     z-index: 10;
 }
+#services > .container > .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #portfolio {
     background-color: #fff;
     z-index: 11;
@@ -1316,11 +1336,11 @@ h1 small,
 /*icomoon icons*/
 @font-face {
 	font-family: 'icomoon';
-	src:url('/static/fonts/icomoon.eot?-fcp8a0');
-	src:url('/static/fonts/icomoon.eot?#iefix-fcp8a0') format('embedded-opentype'),
-		url('/static/fonts/icomoon.woff?-fcp8a0') format('woff'),
-		url('/static/fonts/icomoon.ttf?-fcp8a0') format('truetype'),
-		url('/static/fonts/icomoon.svg?-fcp8a0#icomoon') format('svg');
+	src:url('/static/fonts/icomoon.eot?-gmzqzi');
+	src:url('/static/fonts/icomoon.eot?#iefix-gmzqzi') format('embedded-opentype'),
+		url('/static/fonts/icomoon.woff?-gmzqzi') format('woff'),
+		url('/static/fonts/icomoon.ttf?-gmzqzi') format('truetype'),
+		url('/static/fonts/icomoon.svg?-gmzqzi#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1339,45 +1359,81 @@ h1 small,
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-location:before {
-	content: "\e600";
-}
-.icon-stopwatch:before {
-	content: "\e601";
-}
-.icon-user:before {
+.icon-envelop:before {
 	content: "\e602";
 }
-.icon-wrench:before {
+.icon-location:before {
 	content: "\e603";
 }
-.icon-cogs:before {
-	content: "\e604";
-}
-.icon-stats:before {
-	content: "\e605";
-}
-.icon-meter:before {
+.icon-stopwatch:before {
 	content: "\e606";
 }
-.icon-cloud:before {
+.icon-user:before {
 	content: "\e607";
 }
-.icon-earth:before {
-	content: "\e608";
-}
-.icon-envelope:before {
+.icon-quotes-left:before {
 	content: "\e609";
 }
+.icon-wrench:before {
+	content: "\e60d";
+}
+.icon-cogs:before {
+	content: "\e60e";
+}
+.icon-stats:before {
+	content: "\e60f";
+}
+.icon-fire:before {
+	content: "\e610";
+}
+.icon-powercord:before {
+	content: "\e611";
+}
+.icon-tree:before {
+	content: "\e612";
+}
+.icon-cloud:before {
+	content: "\e613";
+}
+.icon-globe:before {
+	content: "\e614";
+}
+.icon-earth:before {
+	content: "\e615";
+}
 .icon-googleplus:before {
-	content: "\e60a";
+	content: "\e616";
+}
+.icon-google-drive:before {
+	content: "\e617";
 }
 .icon-twitter:before {
-	content: "\e60b";
+	content: "\e600";
+}
+.icon-feed:before {
+	content: "\e601";
 }
 .icon-youtube:before {
 	content: "\e60c";
 }
 .icon-github:before {
-	content: "\e60d";
+	content: "\e604";
+}
+.icon-wordpress:before {
+	content: "\e605";
+}
+.icon-apple:before {
+	content: "\e60a";
+}
+.icon-windows8:before {
+	content: "\e60b";
+}
+.icon-skype:before {
+	content: "\e608";
+}
+.icon-chrome:before {
+	content: "\e618";
+}
+.icon-safari:before {
+	content: "\e619";
 }
