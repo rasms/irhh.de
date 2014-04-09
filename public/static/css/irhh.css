@@ -125,6 +125,20 @@ blockquote.pull-right {
     color: #ffffff;
     text-decoration: none;
 }
+.btn-default {
+    background-color: #777;
+    /*border-color: #777777;*/
+    border-color: #666;
+    color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+    background-color: #666;
+    border-color: #444;
+    color: #fff;
+}
 /*color scheme buttons*/
 
 .btn-grey {
@@ -155,10 +169,10 @@ blockquote.pull-right {
 }
 .section-head {
     font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
-    color: #444;
+    color: #666;
     margin: 30px 0px 30px 0px;
     /*text-align: center;*/
     /*    border-bottom: 3px solid #cccccc;*/
@@ -872,7 +886,7 @@ pre {
     line-height: 1;
     color: #ffffff;
     font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 48px;
     text-shadow: 4px 3px 0 #666, 9px 8px 0 rgba(0, 0, 0, 0.15);
 }
@@ -888,7 +902,7 @@ pre {
 .error h1 {
     line-height: 1;
     font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 @media screen and (min-width: 768px) {
     .jumbotron {
@@ -930,14 +944,14 @@ h1 small,
     padding: 10px 12px;
     background-color: transparent;
     /*border-color: #777777;*/
-    border: 1px solid #f2f2f2;
-    color: #f2f2f2;
+    border: 1px solid #fff;
+    color: #fff;
 }
 .jumbotron .btn-default:hover,
 .jumbotron .btn-default:focus,
 .jumbotron .btn-default:active,
 .jumbotron .btn-default.active {
-    background-color: #f2f2f2;
+    background-color: #fff;
     border-color: #666;
     color: #666;
 }
@@ -967,10 +981,6 @@ h1 small,
     -moz-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
 }
-.btn-default:hover {
-    color: #555555;
-    background-color: #ffffff;
-}
 .progress {
     -webkit-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
@@ -991,6 +1001,11 @@ h1 small,
 }
 .carousel-caption .btn {
     text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0px;
+    }
 }
 .credit {
     font-size: 14px;
