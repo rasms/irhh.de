@@ -136,7 +136,62 @@ blockquote.pull-right {
 .btn-default:active,
 .btn-default.active {
     background-color: #666;
-    border-color: #444;
+    border-color: #555;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #00aced;
+    border-color: #0084b4;
+    color: #fff;
+}
+.btn-twitter:hover,
+.btn-twitter:focus {
+    background-color: #0084b4;
+    border-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+.btn-googleplus {
+    background-color: #d34836;
+    border-color: #AD3B2C;
+    color: #fff;
+}
+.btn-googleplus:hover,
+.btn-googleplus:focus {
+    background-color: #AD3B2C;
+    border-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+.btn-facebook {
+    background-color: #3b5998;
+    border-color: #30487A;
+    color: #fff;
+}
+.btn-facebook:hover,
+.btn-facebook:focus {
+    background-color: #30487A;
+    border-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+.btn-linkedin {
+    background-color: #007bb6;
+    border-color: #005F8C;
+    color: #fff;
+}
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+    background-color: #005F8C;
+    border-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+.btn-tumblr {
+    background-color: #32506d;
+    border-color: #243A4F;
+    color: #fff;
+}
+.btn-tumblr:hover,
+.btn-tumblr:focus {
+    background-color: #243A4F;
+    border-color: rgba(0, 0, 0, .3);
     color: #fff;
 }
 /*color scheme buttons*/
@@ -1049,6 +1104,10 @@ h1 small,
 #certifications {
     padding-top: 20px;
     padding-bottom: 50px;
+}
+#social {
+    padding-top: 20px;
+    background-color: #777;
 }
 #footer {
     height: 220px;
