@@ -4,15 +4,19 @@
     use google\appengine\api\mail\Message;
 
     $name     =   $_POST['name'];  
-    $email    =   'rleissner@irhh.de';
+    $email    =   $_POST['email'];
     $subject  =   $_POST['subject'];
-    $message  =   $_POST['message'];
-    $message_body = "...";
+   
+
+    $message_body = 'From: '.$name."\n";
+    $message_body .= 'E-Mail: '.$email."\n";
+    $message_body .= 'Subject: '.$subject."\n";    
+    $message_body .= 'Message: '.$_POST['message_body'];
 
     $mail_options = [
-        "sender" => "rleissner@irhh.de",
-        "to" => $email,
-        "subject" => $subject,
+        "sender" => "rl@irhh.de",
+        "to" => "rl@irhh.de",
+        "subject" => "Message from irhh.de Contact-Form",
         "textBody" => $message_body
     ];
 
