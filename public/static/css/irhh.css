@@ -752,7 +752,7 @@ blockquote.pull-right {
     vertical-align: middle;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    border-radius: 3px;
+    border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1109,8 +1109,12 @@ h1 small,
 #portfolio,
 #certifications,
 #contact {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
+}
+#portfolio,
+#contact {
+    background-color: #e2e2e2;
 }
 #social {
     padding-top: 20px;
