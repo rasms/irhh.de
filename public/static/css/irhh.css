@@ -194,6 +194,17 @@ blockquote.pull-right {
     border-color: rgba(0, 0, 0, .3);
     color: #fff;
 }
+.btn-xing {
+    background-color: #126567;
+    border-color: #0d4b4d;
+    color: #ddd;
+}
+.btn-xing:hover,
+.btn-xing:focus {
+    background-color: #0d4b4d;
+    border-color: rgba(0, 0, 0, .2);
+    color: #fff;
+}
 /*color scheme buttons*/
 
 .btn-grey {
@@ -535,7 +546,8 @@ blockquote.pull-right {
 }
 .mail,
 .googleplus,
-.twitter {
+.twitter,
+.xing{
     float: left;
 }
 .navbar-nav > .mail > a:hover,
@@ -561,6 +573,11 @@ blockquote.pull-right {
 .navbar-nav > .googleplus > a:hover,
 .navbar-nav > .googleplus > a:focus {
     color: #d34836;
+    background-color: transparent;
+}
+.navbar-nav > .xing > a:hover,
+.navbar-nav > .xing > a:focus {
+    color: #126567;
     background-color: transparent;
 }
 .navbar-nav.pull-right {
