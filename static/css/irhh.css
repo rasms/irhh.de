@@ -19,11 +19,13 @@ body {
 body {
     padding-top: 0px;
     padding-bottom: 60px;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "fira-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #444444;
+    font-weight: 300;
+    color: #444249;
     line-height: 1.5;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga";
 }
 a {
     color: #cccccc;
@@ -68,8 +70,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-family: "fira-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
     line-height: 1.1;
 }
 h1 small,
@@ -128,14 +130,14 @@ blockquote.pull-right {
 .btn-default {
     background-color: #777;
     /*border-color: #777777;*/
-    border-color: #666;
+    border-color: #444249;
     color: #fff;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-    background-color: #666;
+    background-color: #444249;
     border-color: #555;
     color: #fff;
 }
@@ -234,11 +236,11 @@ blockquote.pull-right {
     border-color: #456789;
 }
 .section-head {
-    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
     font-size: 40px;
     line-height: 1.5;
-    color: #666;
+    color: #444249;
     margin: 30px 0px 30px 0px;
     /*text-align: center;*/
     /*    border-bottom: 3px solid #cccccc;*/
@@ -254,7 +256,7 @@ blockquote.pull-right {
     }
 }
 .section-head small {
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "fira-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
 }
 .well {
@@ -518,7 +520,7 @@ blockquote.pull-right {
 .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #666666;
+    color: #444249;
     line-height: 24px;
     border-radius: 0px;
 }
@@ -607,11 +609,11 @@ blockquote.pull-right {
     margin-left: auto;
     margin-right: auto;
     padding: 15px 15px;
-    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
     line-height: 20px;
-    color: #666;
+    color: #444249;
     text-align: center;
 }
 .navbar-brand:hover,
@@ -948,7 +950,7 @@ pre {
 .jumbotron {
     padding-top: 80px;
     margin-bottom: 0px;
-    font-size: 17px;
+    font-size: 20px;
     /*line-height: 2.1428571435;*/
     color: #ffffff;
     background-color: transparent;
@@ -957,15 +959,18 @@ pre {
 .jumbotron h1 {
     line-height: 1;
     color: #ffffff;
-    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
     font-size: 48px;
-    text-shadow: 4px 3px 0 #666, 9px 8px 0 rgba(0, 0, 0, 0.15);
+    text-shadow: 4px 3px 0 #444249, 9px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .jumbotron p {
     margin-left: -15px;
     line-height: 1.5;
     font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .error {
     font-size: 36px;
@@ -973,13 +978,12 @@ pre {
 }
 .error h1 {
     line-height: 1;
-    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 @media screen and (min-width: 768px) {
     .jumbotron {
         border-radius: 0px;
-        font-size: 19px;
         position: fixed;
     }
     .jumbotron h1,
@@ -988,16 +992,19 @@ pre {
     }
     .jumbotron p {
         line-height: 1.4;
+        font-size: 26px;
     }
 }
 @media screen and (min-width: 992px) {
     .jumbotron {
         border-radius: 0px;
-        font-size: 21px;
     }
     .jumbotron h1,
     .error h1 {
         font-size: 120px;
+    }
+    .jumbotron p {
+        font-size: 32px;
     }
     h1 small,
     .h1 small {
@@ -1010,7 +1017,7 @@ pre {
 h1 small,
 .h1 small {
     font-weight: 500;
-    color: #666666;
+    color: #444249;
 }
 .jumbotron .btn-default {
     padding: 10px 12px;
@@ -1024,8 +1031,8 @@ h1 small,
 .jumbotron .btn-default:active,
 .jumbotron .btn-default.active {
     background-color: #fff;
-    border-color: #666;
-    color: #666;
+    border-color: #444249;
+    color: #444249;
 }
 .nav-pills > li.active > a,
 .nav-pills > li > a:hover {
@@ -1042,7 +1049,7 @@ h1 small,
 }
 .navbar-static-top,
 .navbar-fixed-top {
-    border-top: 2px solid #666;
+    border-top: 2px solid #444249;
     -webkit-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
     box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.5);
@@ -1097,23 +1104,23 @@ h1 small,
     color: #fff;
 }
 #home {
-    background: #666 50% 0 fixed;
+    background: #444249 url("/static/img/stardust.png") 50% 0 fixed;
     height: auto;
     margin: 0 auto;
     width: 100%;
     position: relative;
     padding-top: 20px;
     z-index: 0;
-    min-height: 700px;
+    min-height: 300px;
 }
 @media screen and (min-width: 456px) {
     #home {
-        min-height: 600px;
+        min-height: 300px;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     #home {
-        min-height: 500px;
+        min-height: 400px;
     }
 }
 .bg {
@@ -1213,7 +1220,7 @@ h1 small,
     }
 }
 .portfolio-modal .modal-content {
-    padding: 50px 0;
+    padding: 100px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
