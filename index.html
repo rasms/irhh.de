@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>irhh.de</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/irhh.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/irhh.css">
     <script src="//use.typekit.net/vcd6vfw.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <script>
@@ -79,14 +79,14 @@
                 </div>
             </div>
         </div>
-        <div id="home">
+        <section id="home" data-speed="4" data-type="background">
             <div class="jumbotron">
                 <div class="container">
                     <div class="col-sm-12 text-center">
                         <h1>irhh.de</h1>
                         <div class="col-sm-12">
                             <p>
-                               IT-Services and WebDesign from Hamburg <i class="fa fa-anchor"></i>
+                              <i class="fa fa-anchor"></i> IT-Services and WebDesign from Hamburg <i class="fa fa-anchor"></i>
                             </p>
                             
                         </div>
@@ -94,7 +94,7 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
         <div class="bg">
             <div id="services" class="text-center">
@@ -486,7 +486,7 @@
         
     </div>
         <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/static/js/jquery.easing.1.3.min.js"></script>
         <script type="text/javascript" src="/static/js/retina-1.1.0.min.js"></script>
         <script type="text/javascript">
@@ -505,12 +505,27 @@
                 })
             }(window.jQuery)
 
-             $(document).ready(function() {
-                $('.carousel').carousel({
-                    interval: 5000
-                });
-                $('.carousel').carousel('cycle');
-            });
+             $(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 
+   $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+                     
+      $(window).scroll(function() {
+        // HTML5 proves useful for helping with creating JS functions!
+        // also, negative value because we're scrolling upwards                             
+        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+         
+        // background position
+        var coords = '50% '+ yPos + 'px';
+ 
+        // move the background
+        $scroll.css({ backgroundPosition: coords });    
+      }); // end window scroll
+   });  // end section function
+}); // close out script
         </script>
         
 </body>

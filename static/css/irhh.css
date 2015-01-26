@@ -71,7 +71,7 @@ h6,
 .h5,
 .h6 {
     font-family: "fira-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.1;
 }
 h1 small,
@@ -130,14 +130,14 @@ blockquote.pull-right {
 .btn-default {
     background-color: #777;
     /*border-color: #777777;*/
-    border-color: #444249;
+    border-color: #666;
     color: #fff;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active {
-    background-color: #444249;
+    background-color: #666;
     border-color: #555;
     color: #fff;
 }
@@ -962,15 +962,16 @@ pre {
     font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
-    text-shadow: 4px 3px 0 #444249, 9px 8px 0 rgba(0, 0, 0, 0.2);
+    
 }
 .jumbotron p {
     margin-left: -15px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    
 }
 .error {
     font-size: 36px;
@@ -989,10 +990,12 @@ pre {
     .jumbotron h1,
     .error h1 {
         font-size: 64px;
+        text-shadow: 4px 3px 0 #444249, 9px 8px 0 rgba(0, 0, 0, 0.2);
     }
     .jumbotron p {
         line-height: 1.4;
         font-size: 26px;
+        text-shadow: 2px 1px 0 #444249, 6px 5px 0 rgba(0, 0, 0, 0.2);
     }
 }
 @media screen and (min-width: 992px) {
@@ -1129,6 +1132,11 @@ h1 small,
     position: relative;
     -webkit-transform: translate3d(0, 0, 0);
 }
+#services {
+    -webkit-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.4);
+}
 #services,
 #portfolio,
 #certifications,
@@ -1232,7 +1240,9 @@ h1 small,
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
+    font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
 }
 
 .portfolio-modal .modal-content img {
@@ -1285,4 +1295,10 @@ h1 small,
 
 .m-b-25 {
     margin-bottom: 25px !important;
+}
+
+@media(min-width:767px) {
+    .portfolio-modal .modal-content h2 {
+        font-size: 3em;
+    }
 }
