@@ -237,7 +237,7 @@ blockquote.pull-right {
 .btn-circle.btn-xl {
   width: 70px;
   height: 70px;
-  padding: 10px 16px;
+  padding: 10px 13px;
   border-radius: 35px;
   font-size: 24px;
   line-height: 1.33;
@@ -249,6 +249,10 @@ blockquote.pull-right {
   border-radius: 45px;
   font-size: 30px;
   line-height: 1.8;
+}
+
+.btn-circle.btn-xl.btn-mail {
+    padding: 15px 19px;
 }
 
 .btn-circle.btn-mail,
@@ -1029,15 +1033,15 @@ pre {
 .error h1 {
     line-height: 1;
     font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 64px;
 }
 @media screen and (min-width: 768px) {
     .jumbotron {
         border-radius: 0px;
         position: fixed;
     }
-    .jumbotron h1,
-    .error h1 {
+    .jumbotron h1{
         font-size: 64px;
         text-shadow: 4px 3px 0 #444249, 9px 8px 0 rgba(0, 0, 0, 0.2);
     }
