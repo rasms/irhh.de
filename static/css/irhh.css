@@ -116,14 +116,17 @@ blockquote.pull-right {
     border-left: 0;
 }
 .btn {
+    transition: all .5s;
+}
+.btn-3d {
     padding: 8px 12px 5px 12px;
     /*border-radius: 0px;*/
     margin-bottom: 5px;
     border-width: 0px;
     border-bottom-width: 3px;
 }
-.btn:hover,
-.btn:focus {
+.btn-3d:hover,
+.btn-3d:focus {
     color: #ffffff;
     text-decoration: none;
 }
@@ -209,32 +212,70 @@ blockquote.pull-right {
 }
 /*color scheme buttons*/
 
-.btn-grey {
-    color: #ffffff;
-    background-color: #cccccc;
-    border-color: #aaaaaa;
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.428571429;
 }
-.btn-grey:hover,
-.btn-grey:focus,
-.btn-grey:active,
-.btn-grey.active {
-    background-color: #aaaaaa;
-    border-color: #777777;
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 1.33;
 }
-.btn-blue {
-    color: #ffffff;
-    background-color: #008cbd;
-    border-color: #0074a6;
-    border-width: 0px;
-    border-bottom-width: 3px;
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
 }
-.btn-blue:hover,
-.btn-blue:focus,
-.btn-blue:active,
-.btn-blue.active {
-    background-color: #0079a4;
-    border-color: #456789;
+.btn-circle.btn-xxl {
+  width: 90px;
+  height: 90px;
+  padding: 14px 18px;
+  border-radius: 45px;
+  font-size: 30px;
+  line-height: 1.8;
 }
+
+.btn-circle.btn-mail,
+.btn-circle.btn-twitter,
+.btn-circle.btn-skype {
+    background-color: transparent;
+    color: #444249;
+    border-color: #444249;
+}
+.btn-circle.btn-mail:hover,
+.btn-circle.btn-mail:focus,
+.btn-circle.btn-mail:active {
+    background-color: #444249;
+    border-color: #444249;
+    color: #e2e2e2;
+}
+.btn-circle.btn-twitter:hover,
+.btn-circle.btn-twitter:focus,
+.btn-circle.btn-twitter:active {
+    background-color: #00aced;
+    border-color: #00aced;
+    color: #e2e2e2;
+}
+.btn-circle.btn-skype:hover,
+.btn-circle.btn-skype:focus,
+.btn-circle.btn-skype:active {
+    background-color: #12A5F4;
+    border-color: #12A5F4 ;
+    color: #e2e2e2;
+}
+
 .section-head {
     font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
