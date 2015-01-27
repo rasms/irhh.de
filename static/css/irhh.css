@@ -1234,6 +1234,7 @@ h1 small,
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    border: none;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
