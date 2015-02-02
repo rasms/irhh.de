@@ -997,6 +997,7 @@ h1 small,
     position: relative;
     -webkit-transform: translate3d(0, 0, 0);
 }
+
 #services,
 #portfolio,
 #certifications,
@@ -1004,18 +1005,10 @@ h1 small,
     padding-top: 30px;
     padding-bottom: 50px;
 }
-
-#services,
-#certifications {
-    background: #fff url("/static/img/handmadepaper.png") 50% 0 repeat fixed;
-}
-
 #portfolio,
 #contact {
-    background: #e2e2e2 url("/static/img/textured_paper.png") 50% 0 repeat fixed;
+    background-color: #e2e2e2;
 }
-
-
 #social {
     padding-top: 20px;
     background-color: #777;
