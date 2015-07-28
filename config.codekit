@@ -1731,6 +1731,15 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/datenschutz.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/datenschutz.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/impressum.html": {
 		"fileType": 8192,
 		"ignore": 0,
