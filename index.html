@@ -40,7 +40,7 @@
 <body data-spy="scroll" data-target=".navbar">
     <!-- Wrap all page content here -->
     <div id="wrap">
-        <div class="navbar navbar-fixed-top">
+        <div class="navbar navbar-static-top">
             <div class="container">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -77,7 +77,9 @@
                             <p>
                                 <i class="fa fa-anchor"></i><span class="hidden-xs">&nbsp;&nbsp;</span><span class="visible-xs-inline"><br/></span>IT-Services und WebDesign aus Hamburg<span class="visible-xs-inline"><br/></span><span class="hidden-xs">&nbsp;&nbsp;</span><i class="fa fa-anchor"></i>
                             </p>
-
+                            <p>
+                              <a href="#contact" class="btn btn-default">Kontakt aufnehmen</a>
+                            </p>
 
                         </div>
                     </div>
@@ -546,7 +548,7 @@
         ! function ($) {
             $(function () {
                 var $root = $('html, body');
-                $('.navbar a , #footer a').click(function () {
+                $('.navbar a , #footer a , .jumbotron a').click(function () {
                     var href = $.attr(this, 'href');
                     $root.animate({
                         scrollTop: $(href).offset().top

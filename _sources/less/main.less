@@ -15,7 +15,7 @@ body {
     padding-top: 0px;
     padding-bottom: 60px;
     font-family: "fira-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #444249;
     line-height: 1.5;
@@ -100,6 +100,8 @@ blockquote.pull-right {
 }
 .btn {
     transition: all .5s;
+    font-size: 18px;
+    font-weight: 300;
 }
 .btn-3d {
     padding: 8px 12px 5px 12px;
@@ -495,10 +497,10 @@ blockquote.pull-right {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #ffffff;
+    background-color: transparent;
     border-radius: 0px;
     border: 0px;
 }
@@ -529,10 +531,17 @@ blockquote.pull-right {
 .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #777;
+    color: #444249;
     line-height: 24px;
     border-radius: 0px;
 }
+
+.navbar-collapse.in {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+}
+
 .navbar-collapse.in > .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -540,7 +549,7 @@ blockquote.pull-right {
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-    color: #444249;
+    color: #eee;
 
 }
 .navbar-nav > .active > a,
@@ -594,7 +603,7 @@ blockquote.pull-right {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #5e5e5e;
+    color: #eee;
     text-decoration: none;
     border-bottom: none;
     background-color: transparent;
@@ -674,6 +683,12 @@ blockquote.pull-right {
     right: 0;
 }
 @media screen and (min-width: 768px) {
+  .navbar {
+      background-color: transparent;
+  }
+  .navbar-nav > li > a {
+      color: #fff;
+  }
     .navbar-brand {
         float: left;
         margin-left: -15px;
@@ -785,7 +800,7 @@ pre {
     border-radius: 0px;
 }
 .jumbotron {
-    padding-top: 80px;
+    padding-top: 120px;
     margin-bottom: 0px;
     font-size: 20px;
     /*line-height: 2.1428571435;*/
@@ -799,16 +814,16 @@ pre {
     font-family: "museo-sans-rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
-    
+
 }
 .jumbotron p {
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     line-height: 1.5;
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
+
 }
 .error {
     font-size: 36px;
@@ -832,7 +847,8 @@ pre {
     .jumbotron p {
         line-height: 1.4;
         font-size: 26px;
-        text-shadow: 2px 1px 0 #444249, 6px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 1em;
+        /*text-shadow: 2px 1px 0 #444249, 6px 5px 0 rgba(0, 0, 0, 0.2);*/
     }
 }
 @media screen and (min-width: 992px) {
@@ -860,11 +876,14 @@ h1 small,
     color: #444249;
 }
 .jumbotron .btn-default {
-    padding: 10px 12px;
+    padding: 15px 20px;
     background-color: transparent;
     /*border-color: #777777;*/
     border: 1px solid #fff;
     color: #fff;
+    text-transform: none;
+    margin-top: 10px;
+    font-weight: 300;
 }
 .jumbotron .btn-default:hover,
 .jumbotron .btn-default:focus,
@@ -874,7 +893,7 @@ h1 small,
     border-color: #444249;
     color: #444249;
 }
-.navbar {
+/*.navbar {
     -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
@@ -891,7 +910,7 @@ h1 small,
     -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
-}
+}*/
 
 .form-group {
     margin-bottom: 13px;
@@ -913,21 +932,21 @@ h1 small,
 #home {
     background: #444249 url("/static/img/stardust.png") 50% 0 fixed;
     height: auto;
-    margin: 0 auto;
+    margin: -60px auto;
     width: 100%;
     position: relative;
     padding-top: 20px;
     z-index: 0;
-    min-height: 300px;
+    min-height: 600px;
 }
 @media screen and (min-width: 456px) {
     #home {
-        min-height: 300px;
+        min-height: 550px;
     }
 }
 @media screen and (min-width: 992px) {
     #home {
-        min-height: 400px;
+        min-height: 600px;
     }
 }
 .bg {
@@ -951,6 +970,9 @@ h1 small,
 #social {
     padding-top: 20px;
     background-color: #777;
+}
+#social .btn {
+    font-size: 14px;
 }
 #footer {
     height: 220px;
