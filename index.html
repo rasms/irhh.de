@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>irhh.de</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fontastic.s3.amazonaws.com/UAwmJ2EZyveusczL3bGuR6/icons.css" rel="stylesheet">
     <script src="//use.typekit.net/vcd6vfw.js"></script>
     <script src="//use.fonticons.com/83a7718e.js"></script>
     <script>
@@ -96,24 +97,24 @@
 
                     </h2>
 
-                    <div class="row">
+                    <div class="row m-b-25">
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-wrench"></i>&nbsp;System Administration</h3>
+                          <i class="icon-thin-0054-settings-tools-configuration-preferences fa-4x"></i>
+                            <h3>System Administration</h3>
                             <p>
                                 Deployment and configuration of Windows and Linux Servers, installation of serverroles. Planning and deployment of virtualization, Exchange, SharePoint and Private Clouds.
                             </p>
                         </div>
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-bar-chart"></i>&nbsp;Server Wartung</h3>
+                          <i class="icon-thin-0182-screen-ok-success fa-4x"></i>
+                            <h3>Server Wartung</h3>
                             <p>
                                 Monitoring of Servers, Applications and Networks, resolving errors, keep the infrastructure up and running.
                             </p>
                         </div>
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-cloud"></i>&nbsp;Infrastruktur Planung</h3>
+                          <i class="icon-thin-0360-network-connection-lan-computers fa-4x"></i>
+                            <h3>Infrastruktur Planung</h3>
                             <p>
                                 Planning of Server and Network Infrastructure, no matter if on-premises, private or public cloud or a hybrid deployment.
                             </p>
@@ -121,22 +122,22 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-users"></i>&nbsp;IT-Consulting</h3>
+                          <i class="icon-thin-0719-group-users-circle fa-4x"></i>
+                            <h3>IT-Consulting</h3>
                             <p>
                                 Need to buy hardware or decide if to take some services to the cloud? Just ask!
                             </p>
                         </div>
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-globe"></i>&nbsp;Webdesign</h3>
+                          <i class="icon-thin-0543-world-earth-worldwide-location-travel fa-4x"></i>
+                            <h3>Webdesign</h3>
                             <p>
                                 Everything around websites, from new websites over relaunches to blogs... Build with Bootstrap, Wordpress, Octopress...
                             </p>
                         </div>
                         <div class="col-sm-4">
-                            <h3>
-                                <i class="fa fa-tachometer"></i>&nbsp;Performance Optimierung</h3>
+                          <i class="icon-thin-0484-gauge-dashboard-full-fuel fa-4x"></i>
+                            <h3>Performance Optimierung</h3>
                             <p>Optimization of websites for faster loading and enhanced user experience.</p>
                         </div>
                     </div>
@@ -264,10 +265,11 @@
                           </div>
                       </div>
                     </div>
+                    <div id="gesendet"></div>
                     <div class="col-md-6 alert alert-success hidden" role="alert" id="erfolg">
                     <p>Nachricht erfolgreich gesendet!</p>
                     </div>
-                    <div class="col-md-6"  id="gesendet">
+                    <div class="col-md-6"  id="contactform">
                 <div class="well well-sm">
                     <form role="form" data-toggle="validator" class="form-horizontal form" action="//formspree.io/info@irhh.de" method="POST" id="form">
                         <fieldset>
@@ -277,7 +279,7 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="name">Name</label>
                                 <div class="col-md-9">
-                                    <input id="name" name="name" type="text" placeholder="Dein Name" class="form-control" required>
+                                    <input id="name" name="name" type="text" placeholder="Name" class="form-control" required>
 
                                 </div>
                             </div>
@@ -286,7 +288,7 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="email">E-Mail</label>
                                 <div class="col-md-9">
-                                    <input id="email" name="email" type="email" placeholder="du@email.de" class="form-control" required>
+                                    <input id="email" name="email" type="email" placeholder="email@domain.de" class="form-control" required>
 
                                 </div>
                             </div>
@@ -303,8 +305,7 @@
                             <!-- Form actions -->
                             <div class="form-group">
                                 <div class="col-md-12 text-right">
-                                    <button type="submit" class="btn btn-primary btn-3d">Senden</button>
-                                    <button type="reset" class="btn btn-danger btn-3d">Löschen</button>
+                                    <button type="submit" class="btn btn-success btn-3d"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;Senden</button>
                                 </div>
                             </div>
                         </fieldset>
@@ -350,7 +351,7 @@
                         <div>
                             <p class="text-muted credit text-center"><i class="fa fa-code"></i> with <i class="fa fa-heart-o"></i> and
                                 <a href="http://getbootstrap.com/" rel="nofollow" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'bootstrap');">Bootstrap</a> in Hamburg. Icons by
-                                <a href="https://fonticons.com/" rel="nofollow" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'fonticons');"><i class="fa fa-fonticons"></i></a>. Fonts by
+                                <a href="https://fonticons.com/" rel="nofollow" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'fonticons');">Fonticons</a>. Fonts by
                                 <a href="https://typekit.com" rel="nofollow" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'typekit');">Typekit</a>. Hosted on
                                 <a href="https://www.digitalocean.com/?refcode=e27c20617b02" rel="nofollow" target="_blank" onClick="ga('send', 'event', 'Outbound', 'footer', 'do');">DigitalOcean</a>.</p>
                             <p class="text-muted credit text-center">&copy; 2015 - irhh.de &nbsp;&middot;&nbsp;
@@ -666,9 +667,10 @@
 
         $(document).ready(function () {
 
+          //disable form and show alert
           if (window.location.hash == "#gesendet") {
             $('#erfolg').removeClass('hidden');
-            $('#gesendet').addClass('hidden');
+            $('#contactform').addClass('hidden');
           }
 
             // cache the window object
