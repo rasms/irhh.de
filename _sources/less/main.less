@@ -319,11 +319,12 @@ blockquote.pull-right {
 .nav > li {
     position: relative;
     display: block;
+    padding: 0px 15px;
 }
 .nav > li > a {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
     border-bottom: none;
 }
 .nav > li > a:hover,
@@ -530,7 +531,7 @@ blockquote.pull-right {
 }
 .navbar-nav > li > a {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     color: #444249;
     line-height: 24px;
     border-radius: 0px;
@@ -549,14 +550,14 @@ blockquote.pull-right {
 }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-    color: #eee;
-
+    color: #777;
+    border-bottom: none;
 }
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
     color: #444249;
-    font-weight: 500;
+    font-weight: 300;
     background-color: transparent;
 }
 .navbar-nav > .disabled > a,
@@ -693,6 +694,7 @@ blockquote.pull-right {
         float: left;
         margin-left: -15px;
         margin-right: 5px;
+        color: #fff;
     }
     .navbar-nav {
         float: left;
@@ -704,6 +706,12 @@ blockquote.pull-right {
     }
     .navbar-nav > li > a {
         border-radius: 0;
+    }
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+      transition: all .3s;
+        color: #eee;
+        border-bottom: 2px solid #eee;
     }
     .navbar-nav.pull-right {
         float: right;
@@ -963,7 +971,7 @@ h1 small,
 #certifications,
 #contact {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 #portfolio,
 #contact {
@@ -1138,4 +1146,8 @@ h1 small,
 
 .no-border {
     border: none !important;
+}
+
+label {
+    font-weight: 500;
 }
