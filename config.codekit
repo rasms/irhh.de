@@ -2019,6 +2019,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/static\/img\/shs.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114849,
+		"inputAbbreviatedPath": "\/static\/img\/shs.png",
+		"outputAbbreviatedPath": "\/static\/img\/shs.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/img\/shs@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 400166,
+		"inputAbbreviatedPath": "\/static\/img\/shs@2x.png",
+		"outputAbbreviatedPath": "\/static\/img\/shs@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/img\/shs_big.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 400166,
+		"inputAbbreviatedPath": "\/static\/img\/shs_big.png",
+		"outputAbbreviatedPath": "\/static\/img\/shs_big.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/static\/img\/shs_big@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.36479e+06,
+		"inputAbbreviatedPath": "\/static\/img\/shs_big@2x.png",
+		"outputAbbreviatedPath": "\/static\/img\/shs_big@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/static\/img\/stardust.png": {
 		"fileType": 32768,
 		"ignore": 0,
